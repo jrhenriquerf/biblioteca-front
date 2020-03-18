@@ -1,6 +1,5 @@
 <template>
   <div>
-    <m-topbar />
     <div>
       <b-card-group>
         <b-card
@@ -55,13 +54,9 @@
 //fazer esse cara aqui https://bookscouter.com/search/buy/jucelino como referencia
 
 <script>
-import TopBar from '../shared/TopBar.vue';
 
 export default {
   name: 'Home',
-  components: {
-    'm-topbar': TopBar,
-  },
 };
 </script>
 

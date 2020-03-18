@@ -2,11 +2,14 @@ import '@babel/polyfill';
 import 'mutationobserver-shim';
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import Multiselect from 'vue-multiselect';
 import './plugins/bootstrap-vue';
 import routes from './routes';
 import App from './App.vue';
 
 Vue.use(VueRouter);
+
+Vue.component('multiselect', Multiselect);
 
 const router = new VueRouter({
   routes,
