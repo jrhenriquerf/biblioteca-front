@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <m-topbar :routes="routes" />
-    <router-view></router-view>
+    <div class="body">
+      <router-view></router-view>
+    </div>
     <m-footer />
   </div>
 </template>
@@ -26,5 +28,13 @@ export default {
 </script>
 
 <style>
-
+  html, body, #app {
+    height: 100%;
+  }
+  .body {
+    min-height: 80%;
+  }
+  .multiselect-vue .multiselect__tags {
+    border: 1px solid #ced4da;
+  }
 </style>
